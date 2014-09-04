@@ -16,3 +16,7 @@ Combination = require "./combination"
 combination = new Combination
 combination.combination ["a","b"] # ["aa","ab","ba","bb"]
 ```
+
+### methods
+
+#### combination
