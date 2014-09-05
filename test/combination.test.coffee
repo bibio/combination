@@ -26,6 +26,7 @@ exports.CombinationTest =
   'test many pairs': (test) ->
     test.expect(1)
     combination = new Combination
-    result = combination.combination ["a", "b", "c", "d", "e", "f", "g"]
-    test.ok(result.length is 7**7, result.length)
+    td = ["a", "b", "c", "d", "e", "f", "g"]
+    result = combination.combination td
+    test.ok(result.length is td.length**td.length, result.length)
     test.done()
